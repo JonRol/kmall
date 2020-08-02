@@ -1,10 +1,14 @@
 package com.caesar.kmall.user.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.caesar.kmall.user.bean.UmsMember;
+import com.caesar.kmall.user.bean.UmsMemberReceiveAddress;
+
+import java.util.List;
 
 
 public interface UserService {
 
+    List<UmsMember> getAllUser();
 
+    List<UmsMemberReceiveAddress> getMemberReceiveAddress(String memberId);
 }

@@ -4,8 +4,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="org.mybatis.example.BlogMapper">
+<mapper namespace="com.caesar.kmall.user.mapper.UserMapper">
 
-
+    <select id="selectAllUser" resultType="UmsMember">
+        select t.* from ums_member t;
+    </select>
 
 </mapper>
